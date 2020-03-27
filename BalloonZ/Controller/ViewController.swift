@@ -13,11 +13,15 @@ class ViewController: UIViewController {
     
     @IBOutlet var arView: ARView!
     
+    var firstScene: BallonZ.firstScene
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Load the "Box" scene from the "Experience" Reality File
+        // Load the Scene
        // let boxAnchor = try! BallonZ
+        
+        //self.firstScene = try! BallonZ.
         
         // Add the box anchor to the scene
         //arView.scene.anchors.append(boxAnchor)
