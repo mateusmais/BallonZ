@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var arView: ARView!
     
-    var firstScene: BallonZ.firstScene
+    var firstScene: BallonZ.StartScene!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +21,9 @@ class ViewController: UIViewController {
         // Load the Scene
        // let boxAnchor = try! BallonZ
         
-        //self.firstScene = try! BallonZ.
+        self.firstScene = try! BallonZ.loadStartScene()
         
         // Add the box anchor to the scene
-        //arView.scene.anchors.append(boxAnchor)
+        arView.scene.anchors.append(firstScene)
     }
 }
