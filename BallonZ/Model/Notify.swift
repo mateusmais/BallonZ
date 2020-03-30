@@ -11,6 +11,8 @@ import RealityKit
 
 
  struct Notify {
+    
+    //MARK: Functions 
     static func notificationBalloonRed(firstScene: BallonZ.StartScene){
         firstScene.actions.notifyBalloonRed.onAction = { balloonRed in
             print("TOCOU NO VERMELHO")

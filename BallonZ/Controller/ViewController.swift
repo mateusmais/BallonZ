@@ -14,10 +14,10 @@ class ViewController: UIViewController {
     //MARK: Variables
     @IBOutlet var arView: ARView!
     var firstScene: BallonZ.StartScene!
-    var balloonRed = Entity()
-    var balloonBlue = Entity()
-    var balloonGreen = Entity()
-    var balloonYellow = Entity()
+    var balloonRed: Entity?
+    var balloonBlue: Entity?
+    var balloonGreen: Entity?
+    var balloonYellow: Entity?
     var label: Label!
     
     override func viewDidLoad() {
@@ -29,17 +29,17 @@ class ViewController: UIViewController {
         //Add Label to ARView
         self.arView.addSubview(label)
         
+        //MARK: Load Scene
+        self.firstScene = try! BallonZ.loadStartScene()
         
         //Problem to Solve
         //MARK: Entities
-        //        self.balloonRed = self.firstScene.findEntity(named: "balloonRed")!
-        //        self.balloonBlue = self.firstScene.findEntity(named: "balloonBlue")!
-        //        self.balloonGreen = self.firstScene.findEntity(named: "balloonGreen")!
-        //        self.balloonYellow = self.firstScene.findEntity(named: "balloonYellow")!
+        self.balloonRed = self.firstScene.findEntity(named: "balloonRed")
+        self.balloonBlue = self.firstScene.findEntity(named: "balloonBlue")
+        self.balloonGreen = self.firstScene.findEntity(named: "balloonGreen")
+        self.balloonYellow = self.firstScene.findEntity(named: "balloonYellow")
+      
         
-        
-        //MARK: Load Scene
-        self.firstScene = try! BallonZ.loadStartScene()
     
         //MARK: Balloons Notifications
         Notify.notificationBalloonRed(firstScene: self.firstScene)
