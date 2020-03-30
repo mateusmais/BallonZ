@@ -11,15 +11,19 @@ import RealityKit
 
 class ViewController: UIViewController {
     
+    //MARK: Variables
     @IBOutlet var arView: ARView!
-    
     var firstScene: BallonZ.StartScene!
+    var balloonRed = Entity()
+    var balloonBlue = Entity()
+    var balloonGreen = Entity()
+    var balloonRedYellow = Entity()
+    var label: Label!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Load the Scene
-       // let boxAnchor = try! BallonZ
+        self.label = Label(text: "Press Start", frame: CGRect(x: 0, y: 0, width: self.arView.frame.size.width * 0.50, height: self.arView.frame.size.height * 0.05), position: CGPoint(x: self.arView.frame.size.width * 0.50, y: self.arView.frame.size.height * 0.10), color: .white)
+        self.arView.addSubview(label)
         
         self.firstScene = try! BallonZ.loadStartScene()
         

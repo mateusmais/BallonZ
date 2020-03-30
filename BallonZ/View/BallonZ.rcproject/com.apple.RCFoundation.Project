@@ -199,6 +199,180 @@
                     }
                   ],
                   "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "target" : [
+                                            "F5ADD954-853B-4A61-9687-E9DB3019493D"
+                                          ],
+                                          "userIdentifier" : "notifyBalloonRed"
+                                        },
+                                        "name" : {
+                                          "type" : "custom"
+                                        }
+                                      },
+                                      "identifier" : "C44332C5-C7C0-4462-8DCE-2FDD1B5890A8",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "1F66E16E-4AE6-4036-9CC7-94FB667EAA18",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "target" : [
+                                            "F7463A4F-C575-4A4A-B7FA-523B5FECC8E2"
+                                          ],
+                                          "userIdentifier" : "notifyBalloonGreen"
+                                        },
+                                        "name" : {
+                                          "type" : "custom"
+                                        }
+                                      },
+                                      "identifier" : "096DC8D6-2CF5-4AA8-90CE-7F47EF5F3503",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "B95709F4-F552-4A5B-8AFB-CC1FE6E31813",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "target" : [
+                                            "3E0436F0-5B6B-4D9F-A804-022B99D7A37E"
+                                          ],
+                                          "userIdentifier" : "notifyBalloonBlue"
+                                        },
+                                        "name" : {
+                                          "type" : "custom"
+                                        }
+                                      },
+                                      "identifier" : "A00759EA-B216-44AE-97CC-72A14BCCEC3D",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "DC0D5420-6F23-4AE1-AAF3-32DA7FAE9B1B",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "target" : [
+                                            "A0287803-8BE0-4C94-B02E-0C79C5BD3013"
+                                          ],
+                                          "userIdentifier" : "notifyBalloonYellow"
+                                        },
+                                        "name" : {
+                                          "type" : "custom"
+                                        }
+                                      },
+                                      "identifier" : "1A7ACEAA-8111-4C68-B30D-DAC83B024EAC",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "E4D3F21D-A4D2-4E9B-BFD8-111D6F953271",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.49019607901573181,
+                        0.7450980544090271,
+                        0.94901961088180542,
+                        1
+                      ],
+                      "identifier" : "D9319282-A914-4493-A5DE-30E5252F6A96",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "Comportamento",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+                                  "target" : [
+                                    "F5ADD954-853B-4A61-9687-E9DB3019493D",
+                                    "F7463A4F-C575-4A4A-B7FA-523B5FECC8E2",
+                                    "3E0436F0-5B6B-4D9F-A804-022B99D7A37E",
+                                    "A0287803-8BE0-4C94-B02E-0C79C5BD3013"
+                                  ]
+                                },
+                                "name" : "tapTarget"
+                              },
+                              "identifier" : "2D174F9C-DC8D-402A-8E59-42EC5C3CBAF0",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
                 }
               ],
               "gravity" : [
@@ -286,7 +460,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "redBall"
+                            "value" : "balloonRed"
                           }
                         ],
                         [
@@ -307,21 +481,21 @@
                     },
                     "transform" : {
                       "matrix" : [
-                        1,
+                        0.35000002384185791,
                         0,
                         0,
                         0,
                         0,
-                        1,
+                        0.35000002384185791,
                         0,
                         0,
                         0,
                         0,
-                        1,
+                        0.35000002384185791,
                         0,
-                        0,
+                        0.21359069645404816,
                         0.13265213370323181,
-                        0,
+                        0.37483811378479004,
                         1
                       ]
                     }
@@ -408,6 +582,13 @@
                           }
                         ],
                         [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "balloonBlue"
+                          }
+                        ],
+                        [
                           "rigidBody-enabled",
                           {
                             "typeName" : "Bool",
@@ -425,21 +606,21 @@
                     },
                     "transform" : {
                       "matrix" : [
-                        1,
+                        0.35000002384185791,
                         0,
                         0,
                         0,
                         0,
-                        1,
+                        0.35000002384185791,
                         0,
                         0,
                         0,
                         0,
-                        1,
+                        0.35000002384185791,
                         0,
-                        0.45111861824989319,
+                        0.37827000021934509,
                         0.13265213370323181,
-                        -7.4505813074665639e-08,
+                        0.37483808398246765,
                         1
                       ]
                     }
@@ -525,6 +706,13 @@
                           }
                         ],
                         [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "balloonYellow"
+                          }
+                        ],
+                        [
                           "rigidBody-enabled",
                           {
                             "typeName" : "Bool",
@@ -542,21 +730,21 @@
                     },
                     "transform" : {
                       "matrix" : [
-                        1,
+                        0.35000002384185791,
                         0,
                         0,
                         0,
                         0,
-                        1,
+                        0.35000002384185791,
                         0,
                         0,
                         0,
                         0,
-                        1,
+                        0.35000002384185791,
                         0,
-                        0.67667794227600098,
+                        0.45721575617790222,
                         0.13265210390090942,
-                        -7.4505814851022478e-09,
+                        0.37483817338943481,
                         1
                       ]
                     }
@@ -727,21 +915,21 @@
                     },
                     "transform" : {
                       "matrix" : [
-                        1,
+                        0.40000003576278687,
                         0,
                         0,
                         0,
                         0,
-                        0.70710670948028564,
-                        -0.70710641145706177,
+                        0.28284281492233276,
+                        -0.28284266591072083,
                         0,
                         0,
-                        0.70710641145706177,
-                        0.70710670948028564,
+                        0.28284266591072083,
+                        0.28284281492233276,
                         0,
                         0.33833897113800049,
-                        0.030907681211829185,
-                        0.74933433532714844,
+                        0.030907314270734787,
+                        0.46885791420936584,
                         1
                       ]
                     }
@@ -883,17 +1071,17 @@
                     },
                     "transform" : {
                       "matrix" : [
-                        1,
+                        0.35000002384185791,
                         0,
                         0,
                         0,
                         0,
-                        1,
+                        0.35000002384185791,
                         0,
                         0,
                         0,
                         0,
-                        1,
+                        0.35000002384185791,
                         0,
                         0.33382242918014526,
                         0.091064438223838806,
@@ -983,6 +1171,13 @@
                           }
                         ],
                         [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "balloonGreen"
+                          }
+                        ],
+                        [
                           "rigidBody-enabled",
                           {
                             "typeName" : "Bool",
@@ -1000,21 +1195,21 @@
                     },
                     "transform" : {
                       "matrix" : [
-                        1,
+                        0.35000002384185791,
                         0,
                         0,
                         0,
                         0,
-                        1,
+                        0.35000002384185791,
                         0,
                         0,
                         0,
                         0,
-                        1,
+                        0.35000002384185791,
                         0,
-                        0.22555933892726898,
+                        0.29543235898017883,
                         0.13265210390090942,
-                        -4.235160697303667e-22,
+                        0.37483817338943481,
                         1
                       ]
                     }
@@ -1036,21 +1231,21 @@
               "title" : "StartScene",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.99499392509460449,
-                  -1.769512749660862e-07,
-                  0.099934995174407959,
+                  0.9999852180480957,
+                  -1.7683487385511398e-07,
+                  -0.0054299086332321167,
                   0,
-                  0.055645279586315155,
-                  0.83063775300979614,
-                  -0.55402565002441406,
+                  -0.0021577517036348581,
+                  0.91763871908187866,
+                  -0.39740964770317078,
                   0,
-                  -0.083009682595729828,
-                  0.55681312084197998,
-                  0.82647955417633057,
+                  0.0049827662296593189,
+                  0.39741548895835876,
+                  0.91762518882751465,
                   0,
-                  -0.095857501029968262,
-                  2.6377239227294922,
-                  4.5885467529296875,
+                  0.24177443981170654,
+                  1.0947723388671875,
+                  3.082430362701416,
                   1
                 ],
                 "sceneTransform" : [

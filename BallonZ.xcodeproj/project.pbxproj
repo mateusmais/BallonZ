@@ -13,8 +13,7 @@
 		6E12D75E242DA1A7004BFC90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E12D75C242DA1A7004BFC90 /* Main.storyboard */; };
 		6E12D760242DA1A9004BFC90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E12D75F242DA1A9004BFC90 /* Assets.xcassets */; };
 		6E12D763242DA1A9004BFC90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E12D761242DA1A9004BFC90 /* LaunchScreen.storyboard */; };
-		6E12D76E242DA8A4004BFC90 /* Ballon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E12D76D242DA8A4004BFC90 /* Ballon.swift */; };
-		6ED2E30E242DDAB50000121A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ED2E30D242DDAB50000121A /* Default-568h@2x.png */; };
+		6ED2E3142431C1030000121A /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2E3132431C1030000121A /* Label.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +25,7 @@
 		6E12D75F242DA1A9004BFC90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E12D762242DA1A9004BFC90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E12D764242DA1A9004BFC90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E12D76D242DA8A4004BFC90 /* Ballon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ballon.swift; sourceTree = "<group>"; };
-		6ED2E30D242DDAB50000121A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6ED2E3132431C1030000121A /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +42,6 @@
 		6E12D74A242DA1A7004BFC90 = {
 			isa = PBXGroup;
 			children = (
-				6ED2E30D242DDAB50000121A /* Default-568h@2x.png */,
 				6E12D755242DA1A7004BFC90 /* BallonZ */,
 				6E12D754242DA1A7004BFC90 /* Products */,
 			);
@@ -74,7 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				6E12D756242DA1A7004BFC90 /* AppDelegate.swift */,
-				6E12D76D242DA8A4004BFC90 /* Ballon.swift */,
+				6ED2E3132431C1030000121A /* Label.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -156,7 +153,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E12D763242DA1A9004BFC90 /* LaunchScreen.storyboard in Resources */,
-				6ED2E30E242DDAB50000121A /* Default-568h@2x.png in Resources */,
 				6E12D760242DA1A9004BFC90 /* Assets.xcassets in Resources */,
 				6E12D75E242DA1A7004BFC90 /* Main.storyboard in Resources */,
 			);
@@ -171,8 +167,8 @@
 			files = (
 				6E12D759242DA1A7004BFC90 /* ViewController.swift in Sources */,
 				6E12D757242DA1A7004BFC90 /* AppDelegate.swift in Sources */,
+				6ED2E3142431C1030000121A /* Label.swift in Sources */,
 				6E12D75B242DA1A7004BFC90 /* BallonZ.rcproject in Sources */,
-				6E12D76E242DA8A4004BFC90 /* Ballon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
