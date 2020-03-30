@@ -35,7 +35,7 @@
                                           "animationStyle" : "basic",
                                           "buildInAnimationType" : "scale up",
                                           "distance" : 1,
-                                          "duration" : 5,
+                                          "duration" : 2,
                                           "fadeIn" : true,
                                           "linearCoefficient" : 1,
                                           "moveEase" : "easeIn",
@@ -73,7 +73,7 @@
                                     {
                                       "configurationBox" : {
                                         "configuration" : {
-                                          "duration" : 2
+                                          "duration" : 1
                                         },
                                         "name" : {
                                           "type" : "wait"
@@ -100,7 +100,7 @@
                         1
                       ],
                       "identifier" : "8976F5CD-6556-4078-8CFF-AB7FE1416FC3",
-                      "isEnabled" : true,
+                      "isEnabled" : false,
                       "isLooping" : true,
                       "isModal" : false,
                       "name" : "Comp_Balloons",
@@ -242,7 +242,54 @@
                             }
                           ],
                           "__version" : 1
-                        },
+                        }
+                      ],
+                      "color" : [
+                        0.49019607901573181,
+                        0.7450980544090271,
+                        0.94901961088180542,
+                        1
+                      ],
+                      "identifier" : "D9319282-A914-4493-A5DE-30E5252F6A96",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "Notify_RedBalloon",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+                                  "target" : [
+                                    "F5ADD954-853B-4A61-9687-E9DB3019493D"
+                                  ]
+                                },
+                                "name" : "tapTarget"
+                              },
+                              "identifier" : "2D174F9C-DC8D-402A-8E59-42EC5C3CBAF0",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
                         {
                           "__content" : [
                             {
@@ -261,19 +308,66 @@
                                           "type" : "custom"
                                         }
                                       },
-                                      "identifier" : "096DC8D6-2CF5-4AA8-90CE-7F47EF5F3503",
+                                      "identifier" : "D9CB4B6F-9265-4CAE-9E15-773FA366A6D8",
                                       "isEnabled" : true
                                     }
                                   ],
                                   "__version" : 1
                                 }
                               ],
-                              "identifier" : "B95709F4-F552-4A5B-8AFB-CC1FE6E31813",
+                              "identifier" : "E4F6E713-64D9-4E36-8305-CC36854B5772",
                               "isEnabled" : true
                             }
                           ],
                           "__version" : 1
-                        },
+                        }
+                      ],
+                      "color" : [
+                        0.30980393290519714,
+                        0.56470590829849243,
+                        0.99215686321258545,
+                        1
+                      ],
+                      "identifier" : "1D1D6BAC-720B-4ACF-AD97-B4D6AAEEB345",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "Notify_GreenBalloon",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+                                  "target" : [
+                                    "F7463A4F-C575-4A4A-B7FA-523B5FECC8E2"
+                                  ]
+                                },
+                                "name" : "tapTarget"
+                              },
+                              "identifier" : "62E8E819-186F-41FD-B1B7-7242324D5D3B",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
                         {
                           "__content" : [
                             {
@@ -292,19 +386,66 @@
                                           "type" : "custom"
                                         }
                                       },
-                                      "identifier" : "A00759EA-B216-44AE-97CC-72A14BCCEC3D",
+                                      "identifier" : "2CAEFE45-99F2-4434-803C-CAF2D3FD0605",
                                       "isEnabled" : true
                                     }
                                   ],
                                   "__version" : 1
                                 }
                               ],
-                              "identifier" : "DC0D5420-6F23-4AE1-AAF3-32DA7FAE9B1B",
+                              "identifier" : "EE23DB81-0A0B-48E7-AD83-372DB83F8F86",
                               "isEnabled" : true
                             }
                           ],
                           "__version" : 1
-                        },
+                        }
+                      ],
+                      "color" : [
+                        0.56078433990478516,
+                        0.47058823704719543,
+                        0.80392158031463623,
+                        1
+                      ],
+                      "identifier" : "0D68B16E-73C5-4747-8517-3114123EF63A",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "Notify_BlueBalloon",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+                                  "target" : [
+                                    "3E0436F0-5B6B-4D9F-A804-022B99D7A37E"
+                                  ]
+                                },
+                                "name" : "tapTarget"
+                              },
+                              "identifier" : "D78C6ED7-9D65-4325-B69E-B5D68CD147A0",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
                         {
                           "__content" : [
                             {
@@ -323,14 +464,14 @@
                                           "type" : "custom"
                                         }
                                       },
-                                      "identifier" : "1A7ACEAA-8111-4C68-B30D-DAC83B024EAC",
+                                      "identifier" : "B7502B78-F674-4A2B-B8EB-BBD9F5FBA13A",
                                       "isEnabled" : true
                                     }
                                   ],
                                   "__version" : 1
                                 }
                               ],
-                              "identifier" : "E4D3F21D-A4D2-4E9B-BFD8-111D6F953271",
+                              "identifier" : "D19ECE7B-D4D3-415B-BEC9-8050294F6AF5",
                               "isEnabled" : true
                             }
                           ],
@@ -338,16 +479,16 @@
                         }
                       ],
                       "color" : [
-                        0.49019607901573181,
-                        0.7450980544090271,
-                        0.94901961088180542,
+                        0.64705884456634521,
+                        0.32156863808631897,
+                        0.76470589637756348,
                         1
                       ],
-                      "identifier" : "D9319282-A914-4493-A5DE-30E5252F6A96",
+                      "identifier" : "623FE69C-E5D1-4473-B600-914C50DE12B9",
                       "isEnabled" : true,
                       "isLooping" : false,
                       "isModal" : false,
-                      "name" : "Comportamento",
+                      "name" : "Notify_YellowBalloon",
                       "triggers" : [
                         {
                           "__content" : [
@@ -355,15 +496,12 @@
                               "configurationBox" : {
                                 "configuration" : {
                                   "target" : [
-                                    "F5ADD954-853B-4A61-9687-E9DB3019493D",
-                                    "F7463A4F-C575-4A4A-B7FA-523B5FECC8E2",
-                                    "3E0436F0-5B6B-4D9F-A804-022B99D7A37E",
                                     "A0287803-8BE0-4C94-B02E-0C79C5BD3013"
                                   ]
                                 },
                                 "name" : "tapTarget"
                               },
-                              "identifier" : "2D174F9C-DC8D-402A-8E59-42EC5C3CBAF0",
+                              "identifier" : "80665B07-CD3E-465C-A272-432675ADE3C7",
                               "isEnabled" : true
                             }
                           ],
