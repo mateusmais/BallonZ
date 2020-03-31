@@ -10,4 +10,6 @@ import Foundation
 import ARKit
 import RealityKit
 
-
+class ARViewPersonalized: ARView, ARSessionDelegate{
+    
+}
