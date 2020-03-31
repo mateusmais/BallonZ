@@ -8,7 +8,6 @@
 
 import UIKit
 import RealityKit
-
 class ViewController: UIViewController {
     
     //MARK: Variables
@@ -39,8 +38,6 @@ class ViewController: UIViewController {
         self.balloonGreen = self.firstScene.findEntity(named: "balloonGreen")
         self.balloonYellow = self.firstScene.findEntity(named: "balloonYellow")
       
-        
-    
         //MARK: Balloons Notifications
         Notify.notificationBalloonRed(firstScene: self.firstScene)
         Notify.notificationBalloonBlue(firstScene: self.firstScene)
