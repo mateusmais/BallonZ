@@ -12,7 +12,7 @@ import RealityKit
 
 protocol BalloonsDelegate{
     func balloonsStartScene(startScene: BallonZ.StartScene)
-    func balloonsMainScene(startScene: BallonZ.MainScene)
+    func balloonsLearningYellowScene(learningYellowScene: BallonZ.LearningYellowScene)
 }
 
 
@@ -37,11 +37,11 @@ public class Balloons: BalloonsDelegate {
         self.balloonYellowStartScene = startScene.findEntity(named: "balloonYellow")
     }
     
-    func balloonsMainScene(startScene: BallonZ.MainScene) {
-        self.balloonYellowMainScene1 = startScene.findEntity(named: "balloonYellow1")
-        self.balloonYellowMainScene2 = startScene.findEntity(named: "balloonYellow2")
-        self.balloonYellowMainScene3 = startScene.findEntity(named: "balloonYellow3")
-        self.balloonYellowMainScene4 = startScene.findEntity(named: "balloonYellow4")
+    func balloonsLearningYellowScene(learningYellowScene: BallonZ.LearningYellowScene) {
+        self.balloonYellowMainScene1 = learningYellowScene.findEntity(named: "balloonYellow1")
+        self.balloonYellowMainScene2 = learningYellowScene.findEntity(named: "balloonYellow2")
+        self.balloonYellowMainScene3 = learningYellowScene.findEntity(named: "balloonYellow3")
+        self.balloonYellowMainScene4 = learningYellowScene.findEntity(named: "balloonYellow4")
     }
     
 }

@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     //MARK: Variables
     @IBOutlet var arView: ARView!
     var startScene: BallonZ.StartScene!
-    var mainScene: BallonZ.MainScene!
+    var learningYellowScene: BallonZ.LearningYellowScene!
     var balloons: Balloons?
     var label: Label!
     
@@ -32,17 +32,17 @@ class ViewController: UIViewController {
         
         //MARK: Load Scene
         self.startScene = try! BallonZ.loadStartScene()
-        self.mainScene = try! BallonZ.loadMainScene()
+        self.learningYellowScene = try! BallonZ.loadLearningYellowScene()
         
         
         //MARK: Add Entities
         self.balloons?.balloonsStartScene(startScene: self.startScene)
-        self.balloons?.balloonsMainScene(startScene: self.mainScene)
+        self.balloons?.balloonsLearningYellowScene(learningYellowScene: self.learningYellowScene)
         
       
         //MARK: Balloons Notifications
         Notify.notificationBalloonsStartScene(startScene: self.startScene)
-        Notify.notifyEliminateYellowBalloons(mainScene: self.mainScene)
+        Notify.notifyEliminateYellowBalloons(learningYellowScene: self.learningYellowScene)
         
         //MARK: Add the entities to the scene
         arView.scene.anchors.append(startScene)
