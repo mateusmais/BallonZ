@@ -272,7 +272,7 @@
                         1
                       ],
                       "identifier" : "8976F5CD-6556-4078-8CFF-AB7FE1416FC3",
-                      "isEnabled" : false,
+                      "isEnabled" : true,
                       "isLooping" : true,
                       "isModal" : false,
                       "name" : "Comp_Balloons",
@@ -668,12 +668,174 @@
                               "configurationBox" : {
                                 "configuration" : {
                                   "target" : [
-                                    "A0287803-8BE0-4C94-B02E-0C79C5BD3013"
+                                    "A0287803-8BE0-4C94-B02E-0C79C5BD3013",
+                                    "3E0436F0-5B6B-4D9F-A804-022B99D7A37E",
+                                    "F7463A4F-C575-4A4A-B7FA-523B5FECC8E2",
+                                    "F5ADD954-853B-4A61-9687-E9DB3019493D"
                                   ]
                                 },
                                 "name" : "tapTarget"
                               },
                               "identifier" : "80665B07-CD3E-465C-A272-432675ADE3C7",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "animationStyle" : "basic",
+                                          "duration" : 10,
+                                          "emphasisAnimationType" : "jiggle",
+                                          "iterations" : 1,
+                                          "target" : [
+                                            "F7371E81-CB17-4C69-8EF3-EB483047346B"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "type" : "emphasis"
+                                        }
+                                      },
+                                      "identifier" : "7AD2B1B3-7252-4FB8-B426-1A4F819D94A9",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "9C24E7C7-F32B-4FD1-AAE9-871FCC87B0AB",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.88235294818878174,
+                        0.48235294222831726,
+                        0.68627452850341797,
+                        1
+                      ],
+                      "identifier" : "6F10AF29-3184-40BB-923D-B121E9645649",
+                      "isEnabled" : true,
+                      "isLooping" : true,
+                      "isModal" : false,
+                      "name" : "Comp_Title",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+
+                                },
+                                "name" : "start"
+                              },
+                              "identifier" : "602A1D44-1C25-4915-86B1-AD028483B482",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "audioType" : "play",
+                                          "filePath" : "audio:8c6150ade210850670298a12e4c8a959\/BalloonZ_Intro.mp3",
+                                          "loops" : false,
+                                          "target" : [
+
+                                          ],
+                                          "volume" : 1
+                                        },
+                                        "name" : {
+                                          "arguments" : "stereoBypass",
+                                          "type" : "soundtrack"
+                                        }
+                                      },
+                                      "identifier" : "E3240646-0248-4E23-904D-5A793359913C",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "5BA4F92F-4F8E-465F-B8AD-79700D4D98D2",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.49803921580314636,
+                        0.52941179275512695,
+                        0.61960786581039429,
+                        1
+                      ],
+                      "identifier" : "F9390D54-1C74-41F0-895E-14D8AA0D37D1",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "Play_Music",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+
+                                },
+                                "name" : "start"
+                              },
+                              "identifier" : "2D4732EF-88B0-4E8D-9D3B-0C50A07D2082",
                               "isEnabled" : true
                             }
                           ],
@@ -702,6 +864,13 @@
                           {
                             "typeName" : "String",
                             "value" : "Balloon"
+                          }
+                        ],
+                        [
+                          "material",
+                          {
+                            "typeName" : "String",
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -791,21 +960,21 @@
                     },
                     "transform" : {
                       "matrix" : [
-                        0.35000002384185791,
+                        0.45000001788139343,
                         0,
                         0,
                         0,
                         0,
-                        0.35000002384185791,
+                        0.45000001788139343,
                         0,
                         0,
                         0,
                         0,
-                        0.35000002384185791,
+                        0.45000001788139343,
                         0,
-                        0.18534073233604431,
-                        0.13265213370323181,
-                        0.37483811378479004,
+                        0.14886537194252014,
+                        0.18616385757923126,
+                        0.37482792139053345,
                         1
                       ]
                     }
@@ -826,7 +995,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -916,21 +1085,21 @@
                     },
                     "transform" : {
                       "matrix" : [
-                        0.35000002384185791,
+                        0.45000001788139343,
                         0,
                         0,
                         0,
                         0,
-                        0.35000002384185791,
+                        0.45000001788139343,
                         0,
                         0,
                         0,
                         0,
-                        0.35000002384185791,
+                        0.45000001788139343,
                         0,
-                        0.37098178267478943,
-                        0.13265213370323181,
-                        0.37483808398246765,
+                        0.36448633670806885,
+                        0.18616385757923126,
+                        0.37483283877372742,
                         1
                       ]
                     }
@@ -950,7 +1119,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -1040,21 +1209,21 @@
                     },
                     "transform" : {
                       "matrix" : [
-                        0.35000002384185791,
+                        0.45000001788139343,
                         0,
                         0,
                         0,
                         0,
-                        0.35000002384185791,
+                        0.45000001788139343,
                         0,
                         0,
                         0,
                         0,
-                        0.35000002384185791,
+                        0.45000001788139343,
                         0,
-                        0.46317446231842041,
-                        0.13265210390090942,
-                        0.37483817338943481,
+                        0.47093784809112549,
+                        0.18616382777690887,
+                        0.37483423948287964,
                         1
                       ]
                     }
@@ -1144,7 +1313,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "balloonYellow"
+                            "value" : "balloonMini"
                           }
                         ],
                         [
@@ -1198,21 +1367,21 @@
                           "depth",
                           {
                             "typeName" : "Double",
-                            "value" : 0.0129923540636046
+                            "value" : 0.050000000000000003
                           }
                         ],
                         [
                           "height",
                           {
                             "typeName" : "Double",
-                            "value" : 0.35000000000000003
+                            "value" : 0.40000000000000002
                           }
                         ],
                         [
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -1238,7 +1407,7 @@
                           "width",
                           {
                             "typeName" : "Double",
-                            "value" : 0.35000000000000003
+                            "value" : 0.40000000000000002
                           }
                         ]
                       ],
@@ -1278,8 +1447,8 @@
                         5.9604641222676946e-08,
                         0,
                         0.32168862223625183,
-                        0.0010000449838116765,
-                        0.42602077126502991,
+                        0.024264322593808174,
+                        0.42599993944168091,
                         1
                       ]
                     }
@@ -1292,7 +1461,7 @@
                           "bgMaterial",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -1311,14 +1480,14 @@
                           "boundHeight",
                           {
                             "typeName" : "Double",
-                            "value" : 1.5
+                            "value" : 1.5000000596046448
                           }
                         ],
                         [
                           "boundWidth",
                           {
                             "typeName" : "Double",
-                            "value" : 6
+                            "value" : 6.0000002384185791
                           }
                         ],
                         [
@@ -1332,7 +1501,7 @@
                           "font",
                           {
                             "typeName" : "String",
-                            "value" : "ComicSansMS"
+                            "value" : "ComicSansMS-Bold"
                           }
                         ],
                         [
@@ -1393,7 +1562,7 @@
                           "text",
                           {
                             "typeName" : "String",
-                            "value" : "Start"
+                            "value" : "Tap Start\n"
                           }
                         ],
                         [
@@ -1469,9 +1638,9 @@
                         0.28284147381782532,
                         0.28284400701522827,
                         0,
-                        0.32471224665641785,
-                        0.029972583055496216,
-                        0.53759396076202393,
+                        0.31961625814437866,
+                        0.076640330255031586,
+                        0.56486994028091431,
                         1
                       ]
                     }
@@ -1504,7 +1673,7 @@
                           "font",
                           {
                             "typeName" : "String",
-                            "value" : "ComicSansMS"
+                            "value" : "ComicSansMS-Bold"
                           }
                         ],
                         [
@@ -1518,7 +1687,7 @@
                           "height",
                           {
                             "typeName" : "Double",
-                            "value" : 0.26500000000000001
+                            "value" : 0.23000000000000001
                           }
                         ],
                         [
@@ -1540,9 +1709,9 @@
                           {
                             "typeName" : "double4",
                             "value" : [
-                              1,
-                              1,
-                              1,
+                              0.85000002384185791,
+                              0.17000000178813934,
+                              0.17000000178813934,
                               1
                             ]
                           }
@@ -1590,6 +1759,22 @@
                           }
                         ]
                       ],
+                      "children" : {
+                        "back_1" : {
+                          "overrides" : {
+                            "factory" : null,
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "0939D603-0661-492C-9298-4FF35D16F2FE"
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
                       "factory" : {
                         "identifier" : "com.apple.rc.af.CoreAssetFactories.Text",
                         "version" : "0.0"
@@ -1626,8 +1811,8 @@
                         0.35000002384185791,
                         0,
                         0.32079309225082397,
-                        0.089755631983280182,
-                        0.41639688611030579,
+                        0.14093779027462006,
+                        0.45152059197425842,
                         1
                       ]
                     }
@@ -1647,7 +1832,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -1737,21 +1922,21 @@
                     },
                     "transform" : {
                       "matrix" : [
-                        0.35000002384185791,
+                        0.45000001788139343,
                         0,
                         0,
                         0,
                         0,
-                        0.35000002384185791,
+                        0.45000001788139343,
                         0,
                         0,
                         0,
                         0,
-                        0.35000002384185791,
+                        0.45000001788139343,
                         0,
-                        0.27776330709457397,
-                        0.13265210390090942,
-                        0.37483817338943481,
+                        0.25639498233795166,
+                        0.18616382777690887,
+                        0.37483298778533936,
                         1
                       ]
                     }
@@ -1773,21 +1958,21 @@
               "title" : "StartScene",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.99579936265945435,
-                  -2.3841856489070778e-07,
-                  0.091561503708362579,
+                  0.99838906526565552,
+                  -5.029141902923584e-07,
+                  0.05673748254776001,
                   0,
-                  0.057729117572307587,
-                  0.77619761228561401,
-                  -0.62784117460250854,
+                  0.019872181117534637,
+                  0.93665939569473267,
+                  -0.34967720508575439,
                   0,
-                  -0.071069516241550446,
-                  0.63048946857452393,
-                  0.77293723821640015,
+                  -0.05314347892999649,
+                  0.35024151206016541,
+                  0.9351506233215332,
                   0,
-                  0.53891551494598389,
-                  1.4869657754898071,
-                  3.1059741973876953,
+                  0.27075797319412231,
+                  0.47150310873985291,
+                  1.4848841428756714,
                   1
                 ],
                 "sceneTransform" : [
@@ -2484,10 +2669,10 @@
                         1
                       ],
                       "identifier" : "F86DDABC-DC90-4A9E-BD54-62953A161786",
-                      "isEnabled" : false,
+                      "isEnabled" : true,
                       "isLooping" : true,
                       "isModal" : true,
-                      "name" : "  ",
+                      "name" : "MovementYellowBalloons",
                       "triggers" : [
                         {
                           "__content" : [
@@ -2530,8 +2715,39 @@
                                     {
                                       "configurationBox" : {
                                         "configuration" : {
+                                          "target" : [
+                                            "D950C87E-67A2-41DF-B325-A285D8133204"
+                                          ],
+                                          "userIdentifier" : "yellowBalloonEliminated1"
+                                        },
+                                        "name" : {
+                                          "type" : "custom"
+                                        }
+                                      },
+                                      "identifier" : "759E00CD-7C25-4309-A3CB-734C2AA51741",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "44CC4871-46FE-40E8-808A-9ABD2B8427AB",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
                                           "animationStyle" : "basic",
-                                          "duration" : 0.60000002384185791,
+                                          "duration" : 0.80000001192092896,
                                           "emphasisAnimationType" : "pop",
                                           "iterations" : 1,
                                           "target" : [
@@ -2581,7 +2797,7 @@
                                           "animationStyle" : "basic",
                                           "buildOutAnimationType" : "scale down",
                                           "distance" : 1,
-                                          "duration" : 0.60000002384185791,
+                                          "duration" : 0.80000001192092896,
                                           "fadeOut" : true,
                                           "linearCoefficient" : 1,
                                           "moveEase" : "easeInOut",
@@ -2601,7 +2817,35 @@
                                   "__version" : 1
                                 }
                               ],
-                              "identifier" : "92193437-0AF5-4B5E-A0A6-DE3812CCCCD5",
+                              "identifier" : "C0C53E08-E03F-4FCF-A64E-E786514FC430",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "duration" : 60.010204315185547
+                                        },
+                                        "name" : {
+                                          "type" : "wait"
+                                        }
+                                      },
+                                      "identifier" : "2ECCB415-385E-4F17-AC72-763BDE63CE23",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "F22A2824-6970-474C-8CEC-0E79FAFABAC4",
                               "isEnabled" : true
                             }
                           ],
@@ -2625,11 +2869,13 @@
                             {
                               "configurationBox" : {
                                 "configuration" : {
-                                  "userIdentifier" : "NotifyEliminateYellowBalloon1"
+                                  "target" : [
+                                    "D950C87E-67A2-41DF-B325-A285D8133204"
+                                  ]
                                 },
-                                "name" : "custom"
+                                "name" : "tapTarget"
                               },
-                              "identifier" : "42F4EE6E-E30A-4A42-91BD-483676C8F80E",
+                              "identifier" : "C64A775D-5741-401D-9D3E-96181EA25069",
                               "isEnabled" : true
                             }
                           ],
@@ -2662,74 +2908,27 @@
                                       "configurationBox" : {
                                         "configuration" : {
                                           "target" : [
-                                            "D950C87E-67A2-41DF-B325-A285D8133204"
+                                            "FA7F6327-FFEC-4C74-810D-6AC9345494DE"
                                           ],
-                                          "userIdentifier" : "notifyEliminateYellowBalloon1"
+                                          "userIdentifier" : "yellowBalloonEliminated2"
                                         },
                                         "name" : {
                                           "type" : "custom"
                                         }
                                       },
-                                      "identifier" : "7C74A4AD-C8BD-4516-8B57-1EC3435481F3",
+                                      "identifier" : "C751E19F-7D42-427D-9010-8C9BE0276F26",
                                       "isEnabled" : true
                                     }
                                   ],
                                   "__version" : 1
                                 }
                               ],
-                              "identifier" : "A7C54E8D-FE6F-4E71-906F-D281894396A5",
+                              "identifier" : "50DB0F30-4A3D-42C8-B0D5-15E776AC11B0",
                               "isEnabled" : true
                             }
                           ],
                           "__version" : 1
-                        }
-                      ],
-                      "color" : [
-                        0.92156863212585449,
-                        0.72156864404678345,
-                        0.31372550129890442,
-                        1
-                      ],
-                      "identifier" : "A41563B1-DCB3-43C5-8225-7E909FF23052",
-                      "isEnabled" : true,
-                      "isLooping" : false,
-                      "isModal" : false,
-                      "name" : "NotifyEliminateYellowBalloon1",
-                      "triggers" : [
-                        {
-                          "__content" : [
-                            {
-                              "configurationBox" : {
-                                "configuration" : {
-                                  "target" : [
-                                    "D950C87E-67A2-41DF-B325-A285D8133204"
-                                  ]
-                                },
-                                "name" : "tapTarget"
-                              },
-                              "identifier" : "862D5B92-68CF-436A-A298-0BCE16DBE9E8",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        }
-                      ]
-                    }
-                  ],
-                  "__version" : 3
-                },
-                {
-                  "__content" : [
-                    {
-                      "accessibility" : {
-                        "__content" : [
-                          {
-                            "isEnabled" : false
-                          }
-                        ],
-                        "__version" : 1
-                      },
-                      "actionGroups" : [
+                        },
                         {
                           "__content" : [
                             {
@@ -2740,7 +2939,7 @@
                                       "configurationBox" : {
                                         "configuration" : {
                                           "animationStyle" : "basic",
-                                          "duration" : 0.60000002384185791,
+                                          "duration" : 0.80000001192092896,
                                           "emphasisAnimationType" : "pop",
                                           "iterations" : 1,
                                           "target" : [
@@ -2790,7 +2989,7 @@
                                           "animationStyle" : "basic",
                                           "buildOutAnimationType" : "scale down",
                                           "distance" : 1,
-                                          "duration" : 0.60000002384185791,
+                                          "duration" : 0.80000001192092896,
                                           "fadeOut" : true,
                                           "linearCoefficient" : 1,
                                           "moveEase" : "easeInOut",
@@ -2810,7 +3009,35 @@
                                   "__version" : 1
                                 }
                               ],
-                              "identifier" : "0AFDB246-DDA5-48DF-8BF3-8B1A27AC50C7",
+                              "identifier" : "7410C419-8DB2-4835-81AE-BF85F06E6073",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "duration" : 60.237342834472656
+                                        },
+                                        "name" : {
+                                          "type" : "wait"
+                                        }
+                                      },
+                                      "identifier" : "FF751FBA-9B60-4647-BD7A-93895C2888ED",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "1B51BF5D-56A5-45CA-BBF0-A154EDA60784",
                               "isEnabled" : true
                             }
                           ],
@@ -2834,11 +3061,13 @@
                             {
                               "configurationBox" : {
                                 "configuration" : {
-                                  "userIdentifier" : "NotifyEliminateYellowBalloon2"
+                                  "target" : [
+                                    "FA7F6327-FFEC-4C74-810D-6AC9345494DE"
+                                  ]
                                 },
-                                "name" : "custom"
+                                "name" : "tapTarget"
                               },
-                              "identifier" : "C41E0A91-FF60-4696-A663-0ED355C73249",
+                              "identifier" : "41F87BB2-2837-48FA-B2D0-6E6A2A908A18",
                               "isEnabled" : true
                             }
                           ],
@@ -2871,22 +3100,136 @@
                                       "configurationBox" : {
                                         "configuration" : {
                                           "target" : [
-                                            "FA7F6327-FFEC-4C74-810D-6AC9345494DE"
+                                            "0D7F0B40-DE05-4264-B15F-B5DB1F6B2CCB"
                                           ],
-                                          "userIdentifier" : "notifyEliminateYellowBalloon2"
+                                          "userIdentifier" : "yellowBalloonEliminated3"
                                         },
                                         "name" : {
                                           "type" : "custom"
                                         }
                                       },
-                                      "identifier" : "FA722BE6-C57E-4065-A961-408D265AAB14",
+                                      "identifier" : "354F5C79-3CFF-415A-AED2-C67E75BF9933",
                                       "isEnabled" : true
                                     }
                                   ],
                                   "__version" : 1
                                 }
                               ],
-                              "identifier" : "74030B20-8C05-46AD-8D2E-6533299BE8AF",
+                              "identifier" : "A7574303-497E-4505-93BE-A4DD5D997928",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "animationStyle" : "basic",
+                                          "duration" : 0.80000001192092896,
+                                          "emphasisAnimationType" : "pop",
+                                          "iterations" : 1,
+                                          "target" : [
+                                            "0D7F0B40-DE05-4264-B15F-B5DB1F6B2CCB"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "type" : "emphasis"
+                                        }
+                                      },
+                                      "identifier" : "ADABBB31-43AC-474B-B6B0-F9ADE83E3B7C",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                },
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "audioType" : "play",
+                                          "filePath" : "audio:ef8c0db28ff1a565044d712e5fea42fd\/explosionBalloon.mp3",
+                                          "loops" : false,
+                                          "multiplePerformType" : "ignore request",
+                                          "target" : [
+                                            "0D7F0B40-DE05-4264-B15F-B5DB1F6B2CCB"
+                                          ],
+                                          "volume" : 1
+                                        },
+                                        "name" : {
+                                          "type" : "audio"
+                                        }
+                                      },
+                                      "identifier" : "1A35087B-DC12-4680-85F4-D3AF8E41E58C",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                },
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "angularCoefficient" : 1,
+                                          "animationStyle" : "basic",
+                                          "buildOutAnimationType" : "scale down",
+                                          "distance" : 1,
+                                          "duration" : 0.80000001192092896,
+                                          "fadeOut" : true,
+                                          "linearCoefficient" : 1,
+                                          "moveEase" : "easeInOut",
+                                          "respectPhysics" : false,
+                                          "target" : [
+                                            "0D7F0B40-DE05-4264-B15F-B5DB1F6B2CCB"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "type" : "hide"
+                                        }
+                                      },
+                                      "identifier" : "8129A887-A775-49F7-BF5B-3CCD9CD3465A",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "2FCB0F27-616A-490E-B167-B4D51C755D55",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "duration" : 60.237342834472656
+                                        },
+                                        "name" : {
+                                          "type" : "wait"
+                                        }
+                                      },
+                                      "identifier" : "A927EB29-71C0-4689-AE7E-EFEE795ED00A",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "2B2D5256-E0CE-43CE-9F24-ED6768C0922C",
                               "isEnabled" : true
                             }
                           ],
@@ -2894,16 +3237,16 @@
                         }
                       ],
                       "color" : [
-                        0.92156863212585449,
-                        0.72156864404678345,
-                        0.31372550129890442,
+                        0.86274510622024536,
+                        0.3333333432674408,
+                        0.41568627953529358,
                         1
                       ],
-                      "identifier" : "817ED41B-150D-4ED3-B37E-6EAED9F77FEF",
+                      "identifier" : "6C86B669-C96A-4C7E-89C7-41DCAA170363",
                       "isEnabled" : true,
                       "isLooping" : false,
                       "isModal" : false,
-                      "name" : "NotifyEliminateYellowBalloon2",
+                      "name" : "EliminateYellowBalloon3",
                       "triggers" : [
                         {
                           "__content" : [
@@ -2911,12 +3254,283 @@
                               "configurationBox" : {
                                 "configuration" : {
                                   "target" : [
-                                    "D950C87E-67A2-41DF-B325-A285D8133204"
+                                    "0D7F0B40-DE05-4264-B15F-B5DB1F6B2CCB"
                                   ]
                                 },
                                 "name" : "tapTarget"
                               },
-                              "identifier" : "1358F246-5705-431D-83AC-8989F311C7A0",
+                              "identifier" : "23A1F74C-9DC0-486D-9B72-95F2102EAF39",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "target" : [
+                                            "5B9A71E7-E360-495B-86A4-58A859D31622"
+                                          ],
+                                          "userIdentifier" : "yellowBalloonEliminated4"
+                                        },
+                                        "name" : {
+                                          "type" : "custom"
+                                        }
+                                      },
+                                      "identifier" : "C537D888-E7A8-4A74-A920-6399B2DEFB06",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "2EAB07B4-82AD-42AB-862A-575B6680F605",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "animationStyle" : "basic",
+                                          "duration" : 0.80000001192092896,
+                                          "emphasisAnimationType" : "pop",
+                                          "iterations" : 1,
+                                          "target" : [
+                                            "5B9A71E7-E360-495B-86A4-58A859D31622"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "type" : "emphasis"
+                                        }
+                                      },
+                                      "identifier" : "C2DA824A-47ED-420C-AA78-8D9B6D9F089A",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                },
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "audioType" : "play",
+                                          "filePath" : "audio:ef8c0db28ff1a565044d712e5fea42fd\/explosionBalloon.mp3",
+                                          "loops" : false,
+                                          "multiplePerformType" : "ignore request",
+                                          "target" : [
+                                            "5B9A71E7-E360-495B-86A4-58A859D31622"
+                                          ],
+                                          "volume" : 1
+                                        },
+                                        "name" : {
+                                          "type" : "audio"
+                                        }
+                                      },
+                                      "identifier" : "87AA90DE-04D7-45F2-8DF7-54191253AB7F",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                },
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "angularCoefficient" : 1,
+                                          "animationStyle" : "basic",
+                                          "buildOutAnimationType" : "scale down",
+                                          "distance" : 1,
+                                          "duration" : 0.80000001192092896,
+                                          "fadeOut" : true,
+                                          "linearCoefficient" : 1,
+                                          "moveEase" : "easeInOut",
+                                          "respectPhysics" : false,
+                                          "target" : [
+                                            "5B9A71E7-E360-495B-86A4-58A859D31622"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "type" : "hide"
+                                        }
+                                      },
+                                      "identifier" : "B7E44CA2-9C52-4084-9ACB-AE5FB95C9FE4",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "CCB401B1-F684-417D-A387-EA46B716CE3B",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "duration" : 60.237342834472656
+                                        },
+                                        "name" : {
+                                          "type" : "wait"
+                                        }
+                                      },
+                                      "identifier" : "E481CA23-5E7E-41A7-B34C-94D891357797",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "96CD0EF5-5D8E-468D-B3DC-6208E2C20FD9",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.86274510622024536,
+                        0.3333333432674408,
+                        0.41568627953529358,
+                        1
+                      ],
+                      "identifier" : "A5B9D42C-11D5-4BE5-A01E-53DED0974F4A",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "EliminateYellowBalloon4",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+                                  "target" : [
+                                    "5B9A71E7-E360-495B-86A4-58A859D31622"
+                                  ]
+                                },
+                                "name" : "tapTarget"
+                              },
+                              "identifier" : "FEDDEE11-E160-46BA-940C-96D9DDFAB3BC",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "animationStyle" : "basic",
+                                          "duration" : 1,
+                                          "emphasisAnimationType" : "pop",
+                                          "iterations" : 1,
+                                          "target" : [
+                                            "044B998A-7B02-462F-ADF5-65A1C9E9C527"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "type" : "emphasis"
+                                        }
+                                      },
+                                      "identifier" : "D358FD37-6CE7-412C-88F5-9526D7F17EFE",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "A862CC78-8D4C-48F2-9A51-4D935B5D8619",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.21568627655506134,
+                        0.72549021244049072,
+                        0.80000001192092896,
+                        1
+                      ],
+                      "identifier" : "D55A6927-7367-47DB-BFCD-86EFA59C3481",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "Comportamento",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+                                  "userIdentifier" : "notifyTest"
+                                },
+                                "name" : "custom"
+                              },
+                              "identifier" : "3BF856C3-6792-4DB7-91AC-485FE25C7ED8",
                               "isEnabled" : true
                             }
                           ],
@@ -3096,7 +3710,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -3226,7 +3840,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -3357,7 +3971,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -3488,7 +4102,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -3618,7 +4232,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -3749,7 +4363,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -3880,7 +4494,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -4094,7 +4708,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -4276,6 +4890,7 @@
                     }
                   },
                   "A53AA259-5384-417D-8DD5-5030D588D09E" : null,
+                  "AD06A9C5-D4F4-4910-BF35-D2EAD41F7E0F" : null,
                   "BFDE1871-4AAE-484A-AD0C-A0887F5F3DED" : {
                     "overrides" : {
                       "arguments" : [
@@ -4290,7 +4905,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -4492,7 +5107,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -4623,7 +5238,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -4753,7 +5368,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -4883,7 +5498,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -5013,7 +5628,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -5143,7 +5758,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -5274,7 +5889,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "plastic"
                           }
                         ],
                         [
@@ -5418,21 +6033,21 @@
               "title" : "MainScene",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.99898302555084229,
-                  -2.3748725652694702e-07,
-                  0.045087654143571854,
+                  0.963523268699646,
+                  -2.1979212760925293e-07,
+                  0.26762443780899048,
                   0,
-                  0.033968593925237656,
-                  0.65758728981018066,
-                  -0.75261211395263672,
+                  0.18889574706554413,
+                  0.70838946104049683,
+                  -0.68007552623748779,
                   0,
-                  -0.029648778960108757,
-                  0.75337827205657959,
-                  0.65691864490509033,
+                  -0.1895822137594223,
+                  0.70582163333892822,
+                  0.68254977464675903,
                   0,
-                  0.044507917016744614,
-                  1.3965402841567993,
-                  1.5419580936431885,
+                  -0.17026808857917786,
+                  0.54985970258712769,
+                  0.66437304019927979,
                   1
                 ],
                 "sceneTransform" : [

@@ -8,17 +8,18 @@
 
 import UIKit
 import RealityKit
+import ARKit
+
 class ViewController: UIViewController {
     
     //MARK: Variables
     @IBOutlet var arView: ARView!
     var startScene: BallonZ.StartScene!
     var mainScene: BallonZ.MainScene!
-//    var balloonRed: Entity?
-//    var balloonBlue: Entity?
-//    var balloonGreen: Entity?
-//    var balloonYellow: Entity?
+    var balloons: Balloons?
     var label: Label!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,13 +35,14 @@ class ViewController: UIViewController {
         self.mainScene = try! BallonZ.loadMainScene()
         
         
-        //MARK: Entities
-        Balloons.balloonsStartScene(firstScene: self.startScene)
-        Balloons.balloonsMainScene(mainScene: self.mainScene)
+        //MARK: Add Entities
+        self.balloons?.balloonsStartScene(startScene: self.startScene)
+        self.balloons?.balloonsMainScene(startScene: self.mainScene)
+        
       
         //MARK: Balloons Notifications
         Notify.notificationBalloonsStartScene(startScene: self.startScene)
-        Notify.notificationBalloonsMainScene(mainScene: self.mainScene)
+        Notify.notifyEliminateYellowBalloons(mainScene: self.mainScene)
         
         //MARK: Add the entities to the scene
         arView.scene.anchors.append(startScene)

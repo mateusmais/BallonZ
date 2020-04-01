@@ -11,7 +11,7 @@ import UIKit
 
 
 
-class Label: UILabel{
+public class Label: UILabel{
     
     init(text:String, frame:CGRect, position:CGPoint, color: UIColor) {
         super.init(frame: frame)
