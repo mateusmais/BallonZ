@@ -16,35 +16,38 @@ class ViewController: UIViewController {
     @IBOutlet var arView: ARView!
     var startScene: BallonZ.StartScene!
     var learningYellowScene: BallonZ.LearningYellowScene!
+    var colorsScene: BallonZ.ColorsScene!
+    var learningRedScene: BallonZ.LearningRedScene!
+    var learningBlueScene: BallonZ.LearningBlueScene!
+    var learningGreenScene: BallonZ.LearningGreenScene!
     var balloons: Balloons?
     var label: Label!
     
     
-    
+    //MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //MARK: Create and positioning Label
         self.label = Label(text: "Press Start", frame: CGRect(x: 0, y: 0, width: self.arView.frame.size.width * 0.20, height: self.arView.frame.size.height * 0.1), position: CGPoint(x: self.arView.frame.size.width * 0.50, y: self.arView.frame.size.height * 0.20), color: .white)
         
+        //MARK: Load Scene
+        self.loadScenes()
+        
+        //MARK: Add Entities
+        self.addEntities()
+        
         //Add Label to ARView
         self.arView.addSubview(label)
         
-        //MARK: Load Scene
-        self.startScene = try! BallonZ.loadStartScene()
-        self.learningYellowScene = try! BallonZ.loadLearningYellowScene()
-        
-        
-        //MARK: Add Entities
-        self.balloons?.balloonsStartScene(startScene: self.startScene)
-        self.balloons?.balloonsLearningYellowScene(learningYellowScene: self.learningYellowScene)
-        
-      
         //MARK: Balloons Notifications
-        Notify.notificationBalloonsStartScene(startScene: self.startScene)
-        Notify.notifyEliminateYellowBalloons(learningYellowScene: self.learningYellowScene)
+        Notify.allNotify(startScene: self.startScene, learningRS: self.learningRedScene, learningYS: self.learningYellowScene)
+        
+        self.mostrarLabelLearningSceneYellow()
         
         //MARK: Add the entities to the scene
-        arView.scene.anchors.append(startScene)
+        arView.scene.anchors.append(self.colorsScene)
     }
+   
 }
+

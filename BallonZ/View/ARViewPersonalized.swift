@@ -11,5 +11,7 @@ import ARKit
 import RealityKit
 
 class ARViewPersonalized: ARView, ARSessionDelegate{
-    
+    let coachingOverlay = ARCoachingOverlayView()
+    var startSceneAdd = false
+    var ballons = Balloons()
 }
