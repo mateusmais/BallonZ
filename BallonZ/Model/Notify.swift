@@ -10,85 +10,100 @@ import Foundation
 import RealityKit
 
 
-struct Notify {
+public class Notify {
+    
+    var hits = Int()
+    
+    func notifyStartButton(startScene: BallonZ.StartScene, arView: ARViewPersonalized, colorsScene: BallonZ.ColorsScene){
+        startScene.actions.startButtonPressed.onAction = { startButton in
+            arView.scene.anchors.remove(startScene)
+            arView.scene.anchors.append(colorsScene)
+        }
+    }
+    
+    func notifyTutorialButton(colorsScene: BallonZ.ColorsScene, arView: ARViewPersonalized, tutorialScene: BallonZ.TutorialScene){
+        colorsScene.actions.tutorialButtonPressed.onAction = { tutorialButton in
+            arView.scene.anchors.remove(colorsScene)
+            arView.scene.anchors.append(tutorialScene)
+        }
+    }
+    
+    func notifyPlayButton(tutorialScene: BallonZ.TutorialScene, arView: ARViewPersonalized, gameScene: BallonZ.GameScene){
+        tutorialScene.actions.playButtonPressed.onAction = { playButton in
+            arView.scene.anchors.remove(tutorialScene)
+            arView.scene.anchors.append(gameScene)
+        }
+    }
+    
+    func notifyReturnButton(congratulationsScene: BallonZ.CongratulationsScene, arView: ARViewPersonalized, startScene: BallonZ.StartScene){
+        arView.scene.anchors.remove(congratulationsScene)
+        arView.scene.anchors.append(startScene)
+    }
     
     
-    //MARK: Notify Touch All Balloons
-//    static func notificationBalloonsStartScene(startScene: BallonZ.StartScene){
-//        self.notificationRedBalloonStartScene(startScene: startScene)
-//        self.notificationBlueBalloonStartScene(startScene: startScene)
-//        self.notificationGreenBalloonStartScene(startScene: startScene)
-//        self.notificationYellowBalloonStartScene(startScene: startScene)
-//    }
-//
-//
-//    //MARK: Individual Notify Yellow Balloons
-//
-//    static func eliminateYellowBalloonLearningScene1(learningYellowScene: BallonZ.LearningYellowScene){
-//        learningYellowScene.actions.yellowBalloonEliminated1.onAction = { balloonYellowLearningScene1 in
-//            print("Balao 1 Eliminado")
-//        }
-//    }
-//
-//    static func eliminateYellowBalloonLearningScene2(learningYellowScene: BallonZ.LearningYellowScene){
-//        learningYellowScene.actions.yellowBalloonEliminated2.onAction = { balloonYellowLearningScene2 in
-//            print("Balao 2 Eliminado")
-//        }
-//    }
-//
-//    static func eliminateYellowBalloonLearningScene3(learningYellowScene: BallonZ.LearningYellowScene){
-//        learningYellowScene.actions.yellowBalloonEliminated3.onAction = { balloonYellowLearningScene3 in
-//            print("Balao 3 Eliminado")
-//        }
-//    }
-//
-//    static func eliminateYellowBalloonLearningScene4(learningYellowScene: BallonZ.LearningYellowScene){
-//        learningYellowScene.actions.yellowBalloonEliminated4.onAction = { balloonYellowLearningScene4 in
-//            print("Balao 4 Eliminado")
-//        }
-//    }
-//
-//    //MARK: Notify Eliminate All Yellow Balloons
-//    static func notifyEliminateYellowBalloons(learningYellowScene: BallonZ.LearningYellowScene){
-//        self.eliminateYellowBalloonLearningScene1(learningYellowScene: learningYellowScene)
-//        self.eliminateYellowBalloonLearningScene2(learningYellowScene: learningYellowScene)
-//        self.eliminateYellowBalloonLearningScene3(learningYellowScene: learningYellowScene)
-//        self.eliminateYellowBalloonLearningScene4(learningYellowScene: learningYellowScene)
-//
-//
-//    }
-//
-//    static func eliminateRedBalloonLearningScene1(learningRedScene: BallonZ.LearningRedScene){
-//        learningRedScene.actions.redBalloonEliminated1.onAction = { balloonRedLearningScene1 in
-//            print("Balao 1 Eliminado")
-//        }
-//    }
-//
-//    static func eliminateRedBalloonLearningScene2(learningRedScene: BallonZ.LearningRedScene){
-//        learningRedScene.actions.redBalloonEliminated2.onAction = { balloonRedLearningScene2 in
-//            print("Balao 2 Eliminado")
-//        }
-//    }
-//
-//    static func eliminateRedBalloonLearningScene3(learningRedScene: BallonZ.LearningRedScene){
-//        learningRedScene.actions.redBalloonEliminated3.onAction = { balloonRedLearningScene3 in
-//            print("Balao 3 Eliminado")
-//        }
-//    }
-//
-//    static func eliminateRedBalloonLearningScene4(learningRedScene: BallonZ.LearningRedScene){
-//        learningRedScene.actions.redBalloonEliminated4.onAction = { balloonRedLearningScene4 in
-//            print("Balao 4 Eliminado")
-//        }
-//    }
-//
-//    //MARK: Notify Eliminate All Red Balloons
-//    static func notifyEliminateRedBalloons(learningRedScene: BallonZ.LearningRedScene){
-//        self.eliminateRedBalloonLearningScene1(learningRedScene: learningRedScene)
-//        self.eliminateRedBalloonLearningScene2(learningRedScene: learningRedScene)
-//        self.eliminateRedBalloonLearningScene3(learningRedScene: learningRedScene)
-//        self.eliminateRedBalloonLearningScene4(learningRedScene: learningRedScene)
-//    }
-//}
-
+    func redBalloonEliminated(gameScene: BallonZ.GameScene, arView: ARViewPersonalized, congratulationsScene: BallonZ.CongratulationsScene){
+        gameScene.actions.redBalloonEliminated.onAction = { redBalloon in
+            self.hits += 1
+            print("HITOU: \(String(describing: self.hits))")
+            if(self.hits == 4){
+                arView.scene.anchors.remove(gameScene)
+                arView.scene.anchors.append(congratulationsScene)
+            }else{
+                print("AINDA NAO COMPLETOU 4")
+            }
+        }
+        
+    }
+    
+    func greenBalloonEliminated(gameScene: BallonZ.GameScene, arView: ARViewPersonalized, congratulationsScene: BallonZ.CongratulationsScene){
+        gameScene.actions.greenBalloonEliminated.onAction = { greenBalloon in
+            self.hits += 1
+            print("HITOU: \(String(describing: self.hits))")
+            if(self.hits == 4){
+               arView.scene.anchors.remove(gameScene)
+                arView.scene.anchors.append(congratulationsScene)
+            }else{
+                print("AINDA NAO COMPLETOU 4")
+            }
+        }
+        
+    }
+    
+    func blueBalloonEliminated(gameScene: BallonZ.GameScene, arView: ARViewPersonalized, congratulationsScene: BallonZ.CongratulationsScene){
+        gameScene.actions.blueBalloonEliminated.onAction = { blueBalloon in
+            self.hits += 1
+            print("HITOU: \(String(describing: self.hits))")
+            if(self.hits == 4){
+               arView.scene.anchors.remove(gameScene)
+                arView.scene.anchors.append(congratulationsScene)
+            }else{
+                print("AINDA NAO COMPLETOU 4")
+            }
+        }
+        
+    }
+    
+    func yellowBalloonEliminated(gameScene: BallonZ.GameScene, arView: ARViewPersonalized, congratulationsScene: BallonZ.CongratulationsScene){
+        gameScene.actions.yellowBalloonEliminated.onAction = { yellowBalloon in
+            self.hits += 1
+            print("HITOU: \(String(describing: self.hits))")
+            if(self.hits == 4){
+                arView.scene.anchors.remove(gameScene)
+                arView.scene.anchors.append(congratulationsScene)
+            }else{
+                print("AINDA NAO COMPLETOU 4")
+            }
+        }
+        
+    }
+    
+    
+    func notifyEliminatedBalloons(gameScene: BallonZ.GameScene, arView: ARViewPersonalized, congratulationsScene: BallonZ.CongratulationsScene){
+        self.redBalloonEliminated(gameScene: gameScene, arView: arView, congratulationsScene: congratulationsScene)
+        self.greenBalloonEliminated(gameScene: gameScene, arView: arView, congratulationsScene: congratulationsScene)
+        self.blueBalloonEliminated(gameScene: gameScene, arView: arView, congratulationsScene: congratulationsScene)
+        self.yellowBalloonEliminated(gameScene: gameScene, arView: arView, congratulationsScene: congratulationsScene)
+    }
+    
+    
 }

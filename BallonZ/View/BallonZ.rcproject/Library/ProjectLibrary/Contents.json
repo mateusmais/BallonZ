@@ -48,5 +48,10 @@
     "libraryIdentifier" : "be9c3e512a76009a6580443e0f886b21",
     "format" : "audio",
     "displayName" : "Error_Sound.mp3"
+  },
+  {
+    "libraryIdentifier" : "851fd6cfb0310d27299d36874eb37d56",
+    "format" : "audio",
+    "displayName" : "Applauses.mp3"
   }
 ]

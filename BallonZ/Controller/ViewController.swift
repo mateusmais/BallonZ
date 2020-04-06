@@ -10,72 +10,55 @@ import UIKit
 import RealityKit
 import ARKit
 
-class ViewController: UIViewController {
+public class ViewController: UIViewController {
     
     //MARK: Variables
-    //    @IBOutlet var arView: ARView!
     var arView: ARViewPersonalized!
     var startScene: BallonZ.StartScene!
     var colorsScene: BallonZ.ColorsScene!
     var tutorialScene: BallonZ.TutorialScene!
     var gameScene: BallonZ.GameScene!
-    var hits: Int!
+    var congratulationsScene: BallonZ.CongratulationsScene!
+    let notify = Notify()
     
     
     //MARK: ViewDidLoad
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
-        //
         
+        //Create ARView Frame
         let frameView = CGRect (x: 0, y: 0, width: view.frame.width, height: view.frame.height)
         let arView = ARViewPersonalized(frame: frameView)
         arView.center = view.center
+        
+        //MARK: ADD ARView
         self.view.addSubview(arView)
        
+        //MARK: Add Coaching
+        arView.addCoaching()
+        
         //MARK: Load Scene
         self.loadScenes()
-
-        //MARK: Add the entities to the scene
+        
+        
+        //MARK: Add StartScene
         arView.scene.anchors.append(self.startScene)
+        
+        //MARK:Notify's
+        self.notify.notifyStartButton(startScene: startScene, arView: arView, colorsScene: colorsScene)
+        self.notify.notifyTutorialButton(colorsScene: colorsScene, arView: arView, tutorialScene: tutorialScene)
+        self.notify.notifyPlayButton(tutorialScene: tutorialScene, arView: arView, gameScene: gameScene)
+        self.notify.notifyEliminatedBalloons(gameScene: gameScene, arView: arView, congratulationsScene: congratulationsScene)
+        self.notify.notifyReturnButton(congratulationsScene: congratulationsScene, arView: arView, startScene: startScene)
+        
     }
     
-    func loadScenes(){
+    //MARK: Load Scenes
+    public func loadScenes(){
         self.startScene = try! BallonZ.loadStartScene()
         self.colorsScene = try! BallonZ.loadColorsScene()
         self.tutorialScene = try! BallonZ.loadTutorialScene()
         self.gameScene = try! BallonZ.loadGameScene()
+        self.congratulationsScene = try! BallonZ.loadCongratulationsScene()
     }
-    
-    func f(){
-        if let arView = self.view as? ARView{
-            
-            while arView.scene.name == gameScene.scene?.name {
-                print("ESTOU NA GAME SCENE!!!")
-            }
-        }
-    }
-    
-    func finalScene(){
-        gameScene.actions.redBalloonEliminated.onAction = { _ in
-            self.hits += 1
-            print("HITOU: \(String(describing: self.hits))")
-        }
-        
-        gameScene.actions.blueBalloonEliminated.onAction = { _ in
-            self.hits += 1
-            print("HITOU: \(String(describing: self.hits))")
-        }
-        
-        gameScene.actions.greenBalloonEliminated.onAction = { _ in
-            self.hits += 1
-            print("HITOU: \(String(describing: self.hits))")
-        }
-        
-        gameScene.actions.yellowBalloonEliminated.onAction = { _ in
-            self.hits += 1
-            print("HITOU: \(String(describing: self.hits))")
-        }
-    }
-    
 }
-
