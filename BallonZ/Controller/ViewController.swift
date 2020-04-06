@@ -13,41 +13,69 @@ import ARKit
 class ViewController: UIViewController {
     
     //MARK: Variables
-    @IBOutlet var arView: ARView!
+    //    @IBOutlet var arView: ARView!
+    var arView: ARViewPersonalized!
     var startScene: BallonZ.StartScene!
-    var learningYellowScene: BallonZ.LearningYellowScene!
     var colorsScene: BallonZ.ColorsScene!
-    var learningRedScene: BallonZ.LearningRedScene!
-    var learningBlueScene: BallonZ.LearningBlueScene!
-    var learningGreenScene: BallonZ.LearningGreenScene!
-    var balloons: Balloons?
-    var label: Label!
+    var tutorialScene: BallonZ.TutorialScene!
+    var gameScene: BallonZ.GameScene!
+    var hits: Int!
     
     
     //MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        //
         
-        //MARK: Create and positioning Label
-        self.label = Label(text: "Press Start", frame: CGRect(x: 0, y: 0, width: self.arView.frame.size.width * 0.20, height: self.arView.frame.size.height * 0.1), position: CGPoint(x: self.arView.frame.size.width * 0.50, y: self.arView.frame.size.height * 0.20), color: .white)
-        
+        let frameView = CGRect (x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+        let arView = ARViewPersonalized(frame: frameView)
+        arView.center = view.center
+        self.view.addSubview(arView)
+       
         //MARK: Load Scene
         self.loadScenes()
-        
-        //MARK: Add Entities
-        self.addEntities()
-        
-        //Add Label to ARView
-        self.arView.addSubview(label)
-        
-        //MARK: Balloons Notifications
-        Notify.allNotify(startScene: self.startScene, learningRS: self.learningRedScene, learningYS: self.learningYellowScene)
-        
-        self.mostrarLabelLearningSceneYellow()
-        
+
         //MARK: Add the entities to the scene
-        arView.scene.anchors.append(self.colorsScene)
+        arView.scene.anchors.append(self.startScene)
     }
-   
+    
+    func loadScenes(){
+        self.startScene = try! BallonZ.loadStartScene()
+        self.colorsScene = try! BallonZ.loadColorsScene()
+        self.tutorialScene = try! BallonZ.loadTutorialScene()
+        self.gameScene = try! BallonZ.loadGameScene()
+    }
+    
+    func f(){
+        if let arView = self.view as? ARView{
+            
+            while arView.scene.name == gameScene.scene?.name {
+                print("ESTOU NA GAME SCENE!!!")
+            }
+        }
+    }
+    
+    func finalScene(){
+        gameScene.actions.redBalloonEliminated.onAction = { _ in
+            self.hits += 1
+            print("HITOU: \(String(describing: self.hits))")
+        }
+        
+        gameScene.actions.blueBalloonEliminated.onAction = { _ in
+            self.hits += 1
+            print("HITOU: \(String(describing: self.hits))")
+        }
+        
+        gameScene.actions.greenBalloonEliminated.onAction = { _ in
+            self.hits += 1
+            print("HITOU: \(String(describing: self.hits))")
+        }
+        
+        gameScene.actions.yellowBalloonEliminated.onAction = { _ in
+            self.hits += 1
+            print("HITOU: \(String(describing: self.hits))")
+        }
+    }
+    
 }
 

@@ -18,5 +18,35 @@
     "libraryIdentifier" : "235cf493130784220ce0e79b7d2ac73f",
     "format" : "audio",
     "displayName" : "BalloonGreen_Voice.mp3"
+  },
+  {
+    "libraryIdentifier" : "cd366345072d8afb9540a39398ab18f5",
+    "format" : "model",
+    "displayName" : "black_Glass.usdz"
+  },
+  {
+    "libraryIdentifier" : "e9786ce0d7444e077aa2dabb42312813",
+    "format" : "model",
+    "displayName" : "grad_hat.usdz"
+  },
+  {
+    "libraryIdentifier" : "9204c5c9e003e62bede851f546e43717",
+    "format" : "model",
+    "displayName" : "hair.usdz"
+  },
+  {
+    "libraryIdentifier" : "80b1b9e8d3e9136023d1be0dd0f64fb5",
+    "format" : "audio",
+    "displayName" : "BalloonBlue_Voice.mp3"
+  },
+  {
+    "libraryIdentifier" : "d6d971fdfdb9034cada6fb87990a7495",
+    "format" : "audio",
+    "displayName" : "BalloonYellow_Voice.mp3"
+  },
+  {
+    "libraryIdentifier" : "be9c3e512a76009a6580443e0f886b21",
+    "format" : "audio",
+    "displayName" : "Error_Sound.mp3"
   }
 ]
