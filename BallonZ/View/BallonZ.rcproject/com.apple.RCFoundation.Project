@@ -1186,8 +1186,8 @@
                         0.14142195880413055,
                         0,
                         0.31961625814437866,
-                        0.060075581073760986,
-                        -0.1891789436340332,
+                        0.060075514018535614,
+                        -0.15146787464618683,
                         1
                       ]
                     }
@@ -5886,21 +5886,21 @@
               "title" : "StartScene",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.99979555606842041,
-                  -3.8743380059713672e-07,
-                  -0.020216962322592735,
+                  0.99998283386230469,
+                  -3.7974675137775193e-07,
+                  0.0058486755006015301,
                   0,
-                  -0.0081180613487958908,
-                  0.9158291220664978,
-                  -0.40148600935935974,
+                  0.0019865066278725863,
+                  0.94058489799499512,
+                  -0.33955264091491699,
                   0,
-                  0.018515428528189659,
-                  0.40156811475753784,
-                  0.9156419038772583,
+                  -0.00550113245844841,
+                  0.33955872058868408,
+                  0.94056880474090576,
                   0,
-                  0.41815227270126343,
-                  1.3793755769729614,
-                  1.5829691886901855,
+                  0.57278084754943848,
+                  1.261354923248291,
+                  1.83821702003479,
                   1
                 ],
                 "sceneTransform" : [
@@ -6022,7 +6022,7 @@
                                           "target" : [
 
                                           ],
-                                          "volume" : 0.016186377245508983
+                                          "volume" : 0.17943020209580834
                                         },
                                         "name" : {
                                           "arguments" : "ambientBed",
@@ -6233,7 +6233,7 @@
                                       "configurationBox" : {
                                         "configuration" : {
                                           "audioType" : "play",
-                                          "filePath" : "audio:4b90189b1ae896300556357e1c9fc6a9\/BalloonRed_Voice.mp3",
+                                          "filePath" : "audio:8c6c473fc273ce0297318aafbf68c712\/BaloonRed.m4a",
                                           "loops" : false,
                                           "multiplePerformType" : "allow request",
                                           "target" : [
@@ -6339,7 +6339,7 @@
                                       "configurationBox" : {
                                         "configuration" : {
                                           "audioType" : "play",
-                                          "filePath" : "audio:235cf493130784220ce0e79b7d2ac73f\/BalloonGreen_Voice.mp3",
+                                          "filePath" : "audio:00032aaa061a58786e5e6611258c44e1\/BalloonGreen.m4a",
                                           "loops" : false,
                                           "multiplePerformType" : "allow request",
                                           "target" : [
@@ -6421,7 +6421,7 @@
                                     {
                                       "configurationBox" : {
                                         "configuration" : {
-                                          "duration" : 2
+                                          "duration" : 1
                                         },
                                         "name" : {
                                           "type" : "wait"
@@ -6552,7 +6552,7 @@
                                       "configurationBox" : {
                                         "configuration" : {
                                           "audioType" : "play",
-                                          "filePath" : "audio:80b1b9e8d3e9136023d1be0dd0f64fb5\/BalloonBlue_Voice.mp3",
+                                          "filePath" : "audio:1b0c24e15d021621f3306a0b186ca9f1\/BalloonBlue.m4a",
                                           "loops" : false,
                                           "multiplePerformType" : "allow request",
                                           "target" : [
@@ -6579,9 +6579,9 @@
                         }
                       ],
                       "color" : [
-                        0.364705890417099,
-                        0.74117648601531982,
-                        0.69019609689712524,
+                        0.30980393290519714,
+                        0.56470590829849243,
+                        0.99215686321258545,
                         1
                       ],
                       "identifier" : "4F55A938-1631-467B-99FB-555171BEE66B",
@@ -6658,7 +6658,7 @@
                                       "configurationBox" : {
                                         "configuration" : {
                                           "audioType" : "play",
-                                          "filePath" : "audio:d6d971fdfdb9034cada6fb87990a7495\/BalloonYellow_Voice.mp3",
+                                          "filePath" : "audio:8324606ee9d7771804db4a2f661e75dd\/BalloonYellow.m4a",
                                           "loops" : false,
                                           "multiplePerformType" : "allow request",
                                           "target" : [
@@ -6787,6 +6787,114 @@
                                 "name" : "tapTarget"
                               },
                               "identifier" : "C0650503-1785-4B02-A513-493D65844320",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "duration" : 1
+                                        },
+                                        "name" : {
+                                          "type" : "wait"
+                                        }
+                                      },
+                                      "identifier" : "126043EB-D9F1-4572-B451-9E937C968014",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "5AC57F41-2B02-4216-890E-429DF03B9F63",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "audioType" : "play",
+                                          "filePath" : "audio:ce934ff8f502a0b9b54e97bb48a92f0e\/HelloClass.m4a",
+                                          "loops" : false,
+                                          "multiplePerformType" : "ignore request",
+                                          "target" : [
+                                            "17CFEB99-03AE-463F-A3EB-112868CE2BF1"
+                                          ],
+                                          "volume" : 1
+                                        },
+                                        "name" : {
+                                          "type" : "audio"
+                                        }
+                                      },
+                                      "identifier" : "A8801267-BC3F-40F4-ABE4-7774AEF6435D",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "D61843B6-CD66-4DD3-9B9D-5907EA260A1C",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.49019607901573181,
+                        0.7450980544090271,
+                        0.94901961088180542,
+                        1
+                      ],
+                      "identifier" : "321D2397-8246-464C-B969-6BB292503ED1",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "Voice_Teacher",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+
+                                },
+                                "name" : "start"
+                              },
+                              "identifier" : "1E1890EF-19CA-4227-BF0D-442D04D1ADF0",
                               "isEnabled" : true
                             }
                           ],
@@ -7169,8 +7277,8 @@
                         0.14142195880413055,
                         0,
                         0.14786788821220398,
-                        0.052148975431919098,
-                        -0.18294377624988556,
+                        0.052148863673210144,
+                        -0.14365716278553009,
                         1
                       ]
                     }
@@ -15998,21 +16106,21 @@
               "title" : "ColorsScene",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.99986624717712402,
-                  -3.8323923945426941e-07,
-                  -0.016353145241737366,
+                  0.99996215105056763,
+                  -3.8325379136949778e-07,
+                  0.0086935088038444519,
                   0,
-                  -0.0042882310226559639,
-                  0.96500003337860107,
-                  -0.26221436262130737,
+                  0.0023987130261957645,
+                  0.961192786693573,
+                  -0.27586692571640015,
                   0,
-                  0.015780886635184288,
-                  0.2622494101524353,
-                  0.96487104892730713,
+                  -0.0083560366183519363,
+                  0.27587735652923584,
+                  0.96115648746490479,
                   0,
-                  0.27164149284362793,
-                  0.63310980796813965,
-                  1.0364030599594116,
+                  0.12125956267118454,
+                  0.7180476188659668,
+                  1.0274200439453125,
                   1
                 ],
                 "sceneTransform" : [
@@ -16962,6 +17070,166 @@
                                 "name" : "tapTarget"
                               },
                               "identifier" : "65EDA9DB-D9EB-477D-B2F9-42710A01376B",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "audioType" : "play",
+                                          "filePath" : "audio:73e412d73e73da6613ef39ee8ef69d02\/Tutorial.m4a",
+                                          "loops" : false,
+                                          "multiplePerformType" : "ignore request",
+                                          "target" : [
+                                            "3869DBAF-FAE2-45F1-87F3-61E43945E0D2"
+                                          ],
+                                          "volume" : 1
+                                        },
+                                        "name" : {
+                                          "type" : "audio"
+                                        }
+                                      },
+                                      "identifier" : "B3B6DCC6-C175-408A-B57A-9414A129FEAB",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "B25877E0-5776-4A76-B3A0-B71F5EDF3FCB",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.30980393290519714,
+                        0.56470590829849243,
+                        0.99215686321258545,
+                        1
+                      ],
+                      "identifier" : "AB94068C-73F5-4045-9695-D209E869A8AF",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "Comportamento",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+
+                                },
+                                "name" : "start"
+                              },
+                              "identifier" : "3E73104E-74A3-4718-91EC-6F87FC68A594",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "audioType" : "play",
+                                          "filePath" : "audio:8c6150ade210850670298a12e4c8a959\/BalloonZ_Intro.mp3",
+                                          "loops" : false,
+                                          "target" : [
+
+                                          ],
+                                          "volume" : 0.16883420658682635
+                                        },
+                                        "name" : {
+                                          "arguments" : "ambientBed",
+                                          "type" : "soundtrack"
+                                        }
+                                      },
+                                      "identifier" : "443BC835-2F89-47DE-B9CF-157EDB2C971F",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "1F289B72-7A97-4822-8BC5-4DA06F7C25D5",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.56078433990478516,
+                        0.47058823704719543,
+                        0.80392158031463623,
+                        1
+                      ],
+                      "identifier" : "524E7943-E524-460F-B846-BF519DB48F6B",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "Ambience Music",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+
+                                },
+                                "name" : "start"
+                              },
+                              "identifier" : "FB4A24C5-4628-4F60-AAAF-D4CAB6343197",
                               "isEnabled" : true
                             }
                           ],
@@ -17926,8 +18194,8 @@
                         0.14142192900180817,
                         0,
                         -0.011255746707320213,
-                        0.052148159593343735,
-                        -0.15740761160850525,
+                        0.052148062735795975,
+                        -0.17460723221302032,
                         1
                       ]
                     }
@@ -22706,9 +22974,9 @@
                   0.8697969913482666,
                   -0.49196150898933411,
                   0,
-                  -0.066591501235961914,
-                  0.49340912699699402,
-                  0.86724448204040527,
+                  -0.066591493785381317,
+                  0.49340915679931641,
+                  0.86724454164505005,
                   0,
                   -0.097073793411254883,
                   0.74507445096969604,
@@ -23016,6 +23284,30 @@
                                     }
                                   ],
                                   "__version" : 1
+                                },
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "audioType" : "play",
+                                          "filePath" : "audio:3737d6c4fa1ca8994b499d688eb9908f\/Three.m4a",
+                                          "loops" : false,
+                                          "multiplePerformType" : "ignore request",
+                                          "target" : [
+                                            "07E50EA8-0AD3-48D7-A64A-5D6534A264D1"
+                                          ],
+                                          "volume" : 1
+                                        },
+                                        "name" : {
+                                          "type" : "audio"
+                                        }
+                                      },
+                                      "identifier" : "447CDB7E-F417-46BB-ADC4-C10E39552070",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
                                 }
                               ],
                               "identifier" : "6B6E2BAD-4FE7-4F22-B558-93E172F436C7",
@@ -23094,6 +23386,30 @@
                                     }
                                   ],
                                   "__version" : 1
+                                },
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "audioType" : "play",
+                                          "filePath" : "audio:8c4fd3b948796b8699ba77cd2ae97149\/Two.m4a",
+                                          "loops" : false,
+                                          "multiplePerformType" : "ignore request",
+                                          "target" : [
+                                            "280E1CD3-C15D-4B64-B4F5-4212AF08F405"
+                                          ],
+                                          "volume" : 1
+                                        },
+                                        "name" : {
+                                          "type" : "audio"
+                                        }
+                                      },
+                                      "identifier" : "BC0516B2-A997-4F78-A088-067F563DCC7F",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
                                 }
                               ],
                               "identifier" : "5ED3E4D0-574E-4ADC-9DB2-1B537E4AEE19",
@@ -23168,6 +23484,30 @@
                                         }
                                       },
                                       "identifier" : "C4A7D1AE-C53D-4A91-A3FF-7F4FD15130C5",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                },
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "audioType" : "play",
+                                          "filePath" : "audio:e2329443b45ae302aad7b873375347e7\/One.m4a",
+                                          "loops" : false,
+                                          "multiplePerformType" : "ignore request",
+                                          "target" : [
+                                            "D48CE165-6FBC-4640-8F78-BDD76F03497D"
+                                          ],
+                                          "volume" : 1
+                                        },
+                                        "name" : {
+                                          "type" : "audio"
+                                        }
+                                      },
+                                      "identifier" : "BFDF8B8F-4BA2-4B1A-AD6C-BA1B4B121377",
                                       "isEnabled" : true
                                     }
                                   ],
@@ -29293,21 +29633,21 @@
               "title" : "GameScene",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.99754184484481812,
-                  -3.5483384408507845e-07,
-                  0.07007240504026413,
+                  0.99647879600524902,
+                  -3.5483390092849731e-07,
+                  0.083844803273677826,
                   0,
-                  0.030883733183145523,
-                  0.89763742685317993,
-                  -0.43965116143226624,
+                  0.040423683822154999,
+                  0.87610495090484619,
+                  -0.48042264580726624,
                   0,
-                  -0.062899313867092133,
-                  0.44073423743247986,
-                  0.89543116092681885,
+                  -0.073456563055515289,
+                  0.48212003707885742,
+                  0.8730202317237854,
                   0,
-                  -0.069322854280471802,
-                  1.217496395111084,
-                  1.1994810104370117,
+                  0.19828201830387115,
+                  0.55159187316894531,
+                  0.5824892520904541,
                   1
                 ],
                 "sceneTransform" : [
@@ -29353,6 +29693,41 @@
                         "__version" : 1
                       },
                       "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "audioType" : "play",
+                                          "filePath" : "audio:f5be38c66d06af9ad54ed3967b3ef29e\/Congratulations.m4a",
+                                          "loops" : false,
+                                          "multiplePerformType" : "ignore request",
+                                          "target" : [
+                                            "52D804E8-99FA-4B0A-8B07-6D17BB5284A9"
+                                          ],
+                                          "volume" : 1
+                                        },
+                                        "name" : {
+                                          "type" : "audio"
+                                        }
+                                      },
+                                      "identifier" : "6274393B-D581-453A-937F-CCB509CCEDC6",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "07624CC6-038A-45D9-8C3E-29EEDBF45939",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
                         {
                           "__content" : [
                             {
@@ -34339,8 +34714,8 @@
                         0.14142195880413055,
                         0,
                         -0.068384140729904175,
-                        0.060074374079704285,
-                        -0.21869939565658569,
+                        0.060074284672737122,
+                        -0.20559972524642944,
                         1
                       ]
                     }
@@ -34363,21 +34738,21 @@
               "title" : "CongratulationsScene",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.99952906370162964,
-                  -4.2421743273735046e-07,
-                  0.030684769153594971,
+                  0.93075025081634521,
+                  -4.20957718461068e-07,
+                  -0.36565518379211426,
                   0,
-                  0.014545491896569729,
-                  0.88051539659500122,
-                  -0.47379422187805176,
+                  -0.18981505930423737,
+                  0.85470724105834961,
+                  -0.48316234350204468,
                   0,
-                  -0.027018209919333458,
-                  0.47401753067970276,
-                  0.88010072708129883,
+                  0.3125283420085907,
+                  0.51911044120788574,
+                  0.79551887512207031,
                   0,
-                  -0.10435663908720016,
-                  0.87045258283615112,
-                  1.5410690307617188,
+                  0.73631316423416138,
+                  0.98853480815887451,
+                  1.3908458948135376,
                   1
                 ],
                 "sceneTransform" : [

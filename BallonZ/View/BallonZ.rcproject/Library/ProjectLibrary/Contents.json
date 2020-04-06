@@ -10,16 +10,6 @@
     "displayName" : "BalloonZ_Intro.mp3"
   },
   {
-    "libraryIdentifier" : "4b90189b1ae896300556357e1c9fc6a9",
-    "format" : "audio",
-    "displayName" : "BalloonRed_Voice.mp3"
-  },
-  {
-    "libraryIdentifier" : "235cf493130784220ce0e79b7d2ac73f",
-    "format" : "audio",
-    "displayName" : "BalloonGreen_Voice.mp3"
-  },
-  {
     "libraryIdentifier" : "cd366345072d8afb9540a39398ab18f5",
     "format" : "model",
     "displayName" : "black_Glass.usdz"
@@ -35,16 +25,6 @@
     "displayName" : "hair.usdz"
   },
   {
-    "libraryIdentifier" : "80b1b9e8d3e9136023d1be0dd0f64fb5",
-    "format" : "audio",
-    "displayName" : "BalloonBlue_Voice.mp3"
-  },
-  {
-    "libraryIdentifier" : "d6d971fdfdb9034cada6fb87990a7495",
-    "format" : "audio",
-    "displayName" : "BalloonYellow_Voice.mp3"
-  },
-  {
     "libraryIdentifier" : "be9c3e512a76009a6580443e0f886b21",
     "format" : "audio",
     "displayName" : "Error_Sound.mp3"
@@ -53,5 +33,55 @@
     "libraryIdentifier" : "851fd6cfb0310d27299d36874eb37d56",
     "format" : "audio",
     "displayName" : "Applauses.mp3"
+  },
+  {
+    "libraryIdentifier" : "ce934ff8f502a0b9b54e97bb48a92f0e",
+    "format" : "audio",
+    "displayName" : "HelloClass.m4a"
+  },
+  {
+    "libraryIdentifier" : "8c6c473fc273ce0297318aafbf68c712",
+    "format" : "audio",
+    "displayName" : "BaloonRed.m4a"
+  },
+  {
+    "libraryIdentifier" : "00032aaa061a58786e5e6611258c44e1",
+    "format" : "audio",
+    "displayName" : "BalloonGreen.m4a"
+  },
+  {
+    "libraryIdentifier" : "1b0c24e15d021621f3306a0b186ca9f1",
+    "format" : "audio",
+    "displayName" : "BalloonBlue.m4a"
+  },
+  {
+    "libraryIdentifier" : "8324606ee9d7771804db4a2f661e75dd",
+    "format" : "audio",
+    "displayName" : "BalloonYellow.m4a"
+  },
+  {
+    "libraryIdentifier" : "73e412d73e73da6613ef39ee8ef69d02",
+    "format" : "audio",
+    "displayName" : "Tutorial.m4a"
+  },
+  {
+    "libraryIdentifier" : "3737d6c4fa1ca8994b499d688eb9908f",
+    "format" : "audio",
+    "displayName" : "Three.m4a"
+  },
+  {
+    "libraryIdentifier" : "8c4fd3b948796b8699ba77cd2ae97149",
+    "format" : "audio",
+    "displayName" : "Two.m4a"
+  },
+  {
+    "libraryIdentifier" : "e2329443b45ae302aad7b873375347e7",
+    "format" : "audio",
+    "displayName" : "One.m4a"
+  },
+  {
+    "libraryIdentifier" : "f5be38c66d06af9ad54ed3967b3ef29e",
+    "format" : "audio",
+    "displayName" : "Congratulations.m4a"
   }
 ]
