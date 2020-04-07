@@ -35,9 +35,12 @@ public class Notify {
         }
     }
     
-    func notifyReturnButton(congratulationsScene: BallonZ.CongratulationsScene, arView: ARViewPersonalized, startScene: BallonZ.StartScene) = returnButton in {
-        arView.scene.anchors.remove(congratulationsScene)
-        arView.scene.anchors.append(startScene)
+    func notifyReturnButton(congratulationsScene: BallonZ.CongratulationsScene, arView: ARViewPersonalized, startScene: BallonZ.StartScene){
+        congratulationsScene.actions.returnButtonPressed.onAction = { returnButton in
+            arView.scene.anchors.remove(congratulationsScene)
+            arView.scene.anchors.append(startScene)
+        }
+        
     }
     
     
@@ -56,7 +59,7 @@ public class Notify {
         gameScene.actions.greenBalloonEliminated.onAction = { greenBalloon in
             self.hits += 1
             if(self.hits == 4){
-               arView.scene.anchors.remove(gameScene)
+                arView.scene.anchors.remove(gameScene)
                 arView.scene.anchors.append(congratulationsScene)
             }
         }
@@ -67,7 +70,7 @@ public class Notify {
         gameScene.actions.blueBalloonEliminated.onAction = { blueBalloon in
             self.hits += 1
             if(self.hits == 4){
-               arView.scene.anchors.remove(gameScene)
+                arView.scene.anchors.remove(gameScene)
                 arView.scene.anchors.append(congratulationsScene)
             }
         }
