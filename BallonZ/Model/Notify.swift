@@ -35,7 +35,7 @@ public class Notify {
         }
     }
     
-    func notifyReturnButton(congratulationsScene: BallonZ.CongratulationsScene, arView: ARViewPersonalized, startScene: BallonZ.StartScene){
+    func notifyReturnButton(congratulationsScene: BallonZ.CongratulationsScene, arView: ARViewPersonalized, startScene: BallonZ.StartScene) = returnButton in {
         arView.scene.anchors.remove(congratulationsScene)
         arView.scene.anchors.append(startScene)
     }
@@ -44,12 +44,9 @@ public class Notify {
     func redBalloonEliminated(gameScene: BallonZ.GameScene, arView: ARViewPersonalized, congratulationsScene: BallonZ.CongratulationsScene){
         gameScene.actions.redBalloonEliminated.onAction = { redBalloon in
             self.hits += 1
-            print("HITOU: \(String(describing: self.hits))")
             if(self.hits == 4){
                 arView.scene.anchors.remove(gameScene)
                 arView.scene.anchors.append(congratulationsScene)
-            }else{
-                print("AINDA NAO COMPLETOU 4")
             }
         }
         
@@ -58,12 +55,9 @@ public class Notify {
     func greenBalloonEliminated(gameScene: BallonZ.GameScene, arView: ARViewPersonalized, congratulationsScene: BallonZ.CongratulationsScene){
         gameScene.actions.greenBalloonEliminated.onAction = { greenBalloon in
             self.hits += 1
-            print("HITOU: \(String(describing: self.hits))")
             if(self.hits == 4){
                arView.scene.anchors.remove(gameScene)
                 arView.scene.anchors.append(congratulationsScene)
-            }else{
-                print("AINDA NAO COMPLETOU 4")
             }
         }
         
@@ -72,12 +66,9 @@ public class Notify {
     func blueBalloonEliminated(gameScene: BallonZ.GameScene, arView: ARViewPersonalized, congratulationsScene: BallonZ.CongratulationsScene){
         gameScene.actions.blueBalloonEliminated.onAction = { blueBalloon in
             self.hits += 1
-            print("HITOU: \(String(describing: self.hits))")
             if(self.hits == 4){
                arView.scene.anchors.remove(gameScene)
                 arView.scene.anchors.append(congratulationsScene)
-            }else{
-                print("AINDA NAO COMPLETOU 4")
             }
         }
         
@@ -86,12 +77,9 @@ public class Notify {
     func yellowBalloonEliminated(gameScene: BallonZ.GameScene, arView: ARViewPersonalized, congratulationsScene: BallonZ.CongratulationsScene){
         gameScene.actions.yellowBalloonEliminated.onAction = { yellowBalloon in
             self.hits += 1
-            print("HITOU: \(String(describing: self.hits))")
             if(self.hits == 4){
                 arView.scene.anchors.remove(gameScene)
                 arView.scene.anchors.append(congratulationsScene)
-            }else{
-                print("AINDA NAO COMPLETOU 4")
             }
         }
         
